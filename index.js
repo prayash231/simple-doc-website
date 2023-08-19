@@ -50,3 +50,43 @@ document.getElementById('text-underline').addEventListener('click', function(){
     textarea.style.textDecoration = 'underline';
   }
 })
+
+document.getElementById('text-left').addEventListener('click', function(){
+  const textarea = document.getElementById('input-text');
+  if(textarea.style.textAlign === 'left'){
+    textarea.style.textAlign = 'center';
+  }
+  else{
+    textarea.style.textAlign = 'left';
+  }
+})
+
+document.getElementById('text-center').addEventListener('click', function(){
+  const textarea = document.getElementById('input-text');
+  if(textarea.style.textAlign === 'center'){
+    textarea.style.textAlign = 'left';
+  }
+  else{
+    textarea.style.textAlign = 'center';
+  }
+})
+
+document.getElementById('text-right').addEventListener('click', function(){
+  const textarea = document.getElementById('input-text');
+  if(textarea.style.textAlign === 'right'){
+    textarea.style.textAlign = 'left';
+  }
+  else{
+    textarea.style.textAlign = 'right';
+  }
+})
+
+document.getElementById('text-justify').addEventListener('click', function(){
+  const textarea = document.getElementById('input-text');
+  if(textarea.style.textAlign === 'justify'){
+    textarea.style.textAlign = 'center';
+  }
+  else{
+    textarea.style.textAlign = 'justify';
+  }
+})
