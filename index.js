@@ -17,8 +17,8 @@
 // }
 
 
-var textarea = document.getElementById("input-text");
-var button = document.getElementById("text-bold");
+const textarea = document.getElementById("input-text");
+const button = document.getElementById("text-bold");
 
   button.addEventListener("click", function() {
   if (textarea.style.fontWeight === "bold") {
@@ -30,3 +30,23 @@ var button = document.getElementById("text-bold");
 
 
 // onclick="changeFontStyle()"
+
+document.getElementById('text-italic').addEventListener('click', function(){
+  const textarea = document.getElementById('input-text');
+  if(textarea.style.fontStyle === "italic"){
+    textarea.style.fontStyle = "normal";
+  }
+  else{
+    textarea.style.fontStyle = "italic";
+  }
+})
+
+document.getElementById('text-underline').addEventListener('click', function(){
+  const textarea = document.getElementById('input-text');
+  if(textarea.style.textDecoration === 'underline'){
+    textarea.style.textDecoration = 'none';
+  }
+  else{
+    textarea.style.textDecoration = 'underline';
+  }
+})
